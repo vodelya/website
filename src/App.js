@@ -1,16 +1,16 @@
-import { Layout, Menu, Typography } from 'antd';
+import { Layout, Menu, Space } from 'antd';
 import { Contacts } from './components/Contacts';
 
 import './App.scss';
+import { About } from './components/About';
 const { Header, Content, Footer } = Layout;
-const { Paragraph } = Typography;
 
 function App() {
   const menuItems = ['About', 'Research', 'Art', 'Contact'];
 
   return (
     <Layout className='layout'>
-      <Header>
+      <Header style={{ marginBottom: '20px' }}>
         <Menu
           theme='dark'
           mode='horizontal'
@@ -26,15 +26,16 @@ function App() {
           padding: '0 50px',
         }}
       >
-        <Paragraph>Hello, World!</Paragraph>
+        <Space direction='vertical' size='large' style={{ display: 'flex' }}>
+          <About />
+          <Contacts />
+        </Space>
       </Content>
       <Footer
         style={{
           textAlign: 'center',
         }}
-      >
-        <Contacts />
-      </Footer>
+      />
     </Layout>
   );
 }
