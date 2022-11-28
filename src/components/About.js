@@ -12,7 +12,7 @@ export const About = () => {
       </Row>
       <Row style={{ gap: '20px' }}>
         <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 11, offset: 1 }} lg={{ span: 11, offset: 1 }}>
-          <Image style={{ borderRadius: "50%" }} preview={false} width="50%" src="/avatar.jpeg" />
+          <Image style={{ borderRadius: "50%" }} preview={false} width="min(50%, 30vh)" src="/avatar.jpeg" />
         </Col>
         <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 11 }} lg={{ span: 11 }}>
           <Paragraph>

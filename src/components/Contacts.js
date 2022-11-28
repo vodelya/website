@@ -5,7 +5,7 @@ const { Title } = Typography;
 
 export const Contacts = () => {
 	return (
-		<>
+		<div id="contact">
 			<Row>
 				<Col span={24}>
 					<Title level={2}>Contact</Title>
@@ -35,6 +35,6 @@ export const Contacts = () => {
 					);
 				})}
 			</Row>
-		</>
+		</div>
 	);
 };
